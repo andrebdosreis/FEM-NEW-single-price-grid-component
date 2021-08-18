@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background-color: #e6eff6;
+}
+
+main {
+    width: 95%;
+    margin: auto;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 650px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px #999;
+}
+
+.box {
+    padding: 40px;
+}
+
+.community {
+    grid-column: 1/3;
+    background-color: #ffffff;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    color: #acb2be;
+}
+
+.community h1 {
+    color: #31b1b2;
+    font-weight: 700;
+}
+
+.community span {
+    display: block;
+    color: #bfdf32;
+    font-weight:700;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.subscription {
+    grid-column: 1/2;
+    background-color: #2bb3b1;
+    border-bottom-left-radius: 20px;
+    color: #ffffff;
+}
+
+.subscription h2,
+.why h2 {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    color: #6cd4d5;
+    font-weight: 400;
+}
+
+.price p {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.subscription a {
+    display: block;
+    padding: 20px;
+    background-color: #bfdf32;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.subscription a:hover {
+    background-color: #ffffff;
+    color: #bfdf32;
+}
+
+.why {
+    grid-column: 2/3;
+    background-color: #4abebd;
+    border-bottom-right-radius: 20px;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+footer {
+    text-align: center;
+    font-size: 11px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #31b1b2;
+}
+
+@media (max-width: 430px) {
+    main {align-items: flex-start;}
+    .container {margin: 20px;}
+    .community {grid-row: 1/2;}
+    .subscription {grid-column: 1/3; grid-row: 2/3; border-radius: 0px;}
+    .why {grid-column:1/3; grid-row: 3/4; border-bottom-left-radius: 20px;}
+}
